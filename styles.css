@@ -1,0 +1,211 @@
+body {
+    background-image: url(/Img/magicpattern-oPH_5xuMgQw-unsplash.jpg);
+    background-size: 100vw 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Syne', sans-serif;
+}
+
+.margin {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top:15vh;
+    
+}
+
+h1 {
+    font-family: 'Climate Crisis', sans-serif;
+    letter-spacing: 2px;
+}
+
+h2,h3 {
+    font-weight: 600;
+}
+
+.banner {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #cac1ab;
+}
+
+button {
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: 50px;
+    padding: 15px 25px 15px 25px;
+    font-weight: 700;
+    font-family: 'Syne', sans-serif;
+    font-size: 1.0rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #334B37;
+    color: white;
+}
+
+
+button:active {
+    background-color: #B64B21;
+    color: white; 
+}
+
+section {
+    border-radius: 10px;
+    border: 1px solid rgba(154, 154, 154, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+form {
+    text-align: center;
+}
+
+/* .relative {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(51, 75, 55, 0.9);
+    color: #fff;
+    top: 0;
+    position: fixed;
+    width: 98vw;
+
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Syne', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.home:hover{
+    text-decoration: underline;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+
+}
+
+.align-right {
+    margin-right: 20px;
+    align-self: center;
+}
+
+.grid-articles {
+    display: grid;
+    /* El auto-fill lo que hace es rellenar automaticamente:
+    El min max hace que la columna use un mínimo de 200px para rellenar la columna y un máximo de 1fr
+    y combinados lo que hacen es seguir este patrón: Si hay 200px más (MIN establecido), rellena con otra columna 
+    de 200px y si no, simplemente la columna actual va a ocupar el MAX establecido*/
+
+    /* El auto-fit estira el contenido para rellenar cuando hay poco contenido. */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 16px;
+}
+
+.featured {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    justify-content: center;
+}
+
+
+.featured-img {
+    width: 25%;
+    height: 50%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .align-right {
+        visibility: hidden;
+    }
+
+}
+
+article {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+#suscribirse {
+    width: 30vw;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: start;
+    margin: 0 auto;
+    width: 30vw;
+}
+
+footer * {
+    margin-bottom: 12px;
+}
+
+input {
+    padding: 2.5%;
+    border-radius: 50px;
+    border: none;
+    margin-top: 12px;
+}
+
+#Email, #Nombre {
+    width: 30vw;
+}
+
+#Registro {
+    width: 30%;
+}
+
+
+.prueba {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+
+}
+
+.gridlayout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
