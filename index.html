@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De Mentes</title>
+  <title>Gatos de Schrödinger</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,34 +12,83 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/Img/logo.png">
+  <script src="https://kit.fontawesome.com/797418a870.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <nav>
     <a href="index.html" class="home"><img src="Img/logo.png" alt="Logo" width="50px">Gatos de Schrödinger</a>
     <div class="align-right">
-      <a href="#suscribirse" class="right-menu">Suscribirse</a>
+      <a href="suscribirse.html" class="right-menu">Suscribirse</a>
       <a href="sobre-mi.html" class="right-menu">Sobre mí</a>
+      <a href="foro.html" class="right-menu">Foro</a>
+      <a href="contacto.html" class="right-menu">Contacto</a>
     </div>
   </nav>
 
-  <div class="banner">
-    <h1>Gatos de Schrödinger</h1>
-    <button>Ser parte de la comunidad</button>
+  <div id="transition"></div>
+
+  <div class="banner" style="background-image: url(/Web-Design/Img/Mistery.jpg);">
+    <div class="banner-content">
+      <h1>Gatos de Schrödinger</h1>
+      <a href="suscribirse.html"><button>Ser parte de la comunidad</button></a>
+    </div>
   </div>
+
+  <article class="article-style">
+    <h1>Gatos de Schrödinger: Explorando Incertidumbres y Curiosidades en Ciencia y Filosofía</h1>
+
+    <p>Bienvenidos a "Gatos de Schrödinger", un rincón digital donde la incertidumbre se encuentra con la curiosidad, y
+      la ciencia y la filosofía se entrelazan en un fascinante baile de ideas. Este blog es mi espacio para compartir
+      pensamientos, preguntas intrigantes y explorar los misterios que rodean la naturaleza, desde lo microscópico hasta
+      lo cósmico.</p>
+
+    <h2>¿Por qué "Gatos de Schrödinger"?</h2>
+
+    <p>La elección del nombre no es casualidad. La paradoja del gato de Schrödinger encapsula la esencia de la
+      incertidumbre en la realidad cuántica, y aquí, en este blog, abrazamos la ambigüedad, las preguntas sin respuestas
+      definitivas y la maravilla que proviene de explorar lo desconocido.</p>
+
+    <h2>¿Qué Puedes Esperar?</h2>
+
+    <p>Desde artículos que desafían nuestras concepciones sobre el tiempo hasta reflexiones profundas sobre la
+      naturaleza de la realidad, este espacio es un crisol de ideas eclécticas. Exploraré temas científicos, filosóficos
+      y cualquier otra área que despierte mi curiosidad, y espero que también despierte la tuya.</p>
+
+    <h2>Compartiendo Inquietudes y Descubrimientos</h2>
+
+    <p>Este blog no solo es un monólogo, sino un diálogo abierto. Aprecio la diversidad de pensamientos y perspectivas,
+      así que no dudes en comentar, preguntar o compartir tus propias inquietudes y descubrimientos. Juntos, podemos
+      tejer una red de pensamiento que nos impulse a explorar más allá de los límites convencionales.</p>
+
+    <h2>Únete a la Aventura</h2>
+
+    <p>Así que, ¿estás listo para sumergirte en las incertidumbres del universo? ¿Listo para explorar la ciencia y la
+      filosofía desde ángulos inesperados? ¡Únete a la aventura en "Gatos de Schrödinger" y descubre junto conmigo las
+      maravillas del conocimiento y la sabiduría que yacen en lo inexplorado!</p>
+
+    <img class="mini-banner-img" src="/Web-Design/Img/AbstractPool.jpg" alt="Reloj" style="object-position: 0 90%;">
+
+    <!-- <video width="500" height="250" controls>
+     <source src="Videos/Loneliness-(1080p60).mp4" type="video/mp4"> -->
+    <!-- Your browser does not support the video tag. -->
+    <!-- </video> -->
+  </article>
+
 
   <div class="margin">
     <header>
-      <h1>Psicology</h1>
+      <h1>Sección Ciencia Filosófica</h1>
     </header>
 
     <div class="grid-articles">
 
       <section class="featured">
         <article class="horizontal-align-article">
-          <img class="featured-img" src="/Img/gatito.webp" alt="thumbnail gato" class="thumbnail">
-          <h3><a href="#">¿Tener un gato puede ser la mejor decisión de tu vida?</a></h3>
-          <p>Estudios afirman que los felinos son la clave para la felicidad.</p>
+          <img class="featured-img" src="/Web-Design/Img/SurrealImage.jpg" alt="Imagen Surrealista" class="thumbnail">
+          <h3><a href="art-1-dormir.html">¿A dónde vamos cuando dormimos?</a></h3>
+          <p>Un Viaje Fascinante al Mundo del Sueño.</p>
           <!-- <video width="500" height="250" controls>
         <source src="Videos/Loneliness-(1080p60).mp4" type="video/mp4"> -->
           <!-- Your browser does not support the video tag. -->
@@ -49,64 +98,53 @@
 
       <section>
         <article>
-          <img src="/Img/gato.jpg" alt="thumbnail gato" class="thumbnail">
-          <h3><a href="#">¿Los gatos nos entienden?</a></h3>
-          <p>Es hora de dejar de decirles apodos vergonzosos.</p>
+          <img src="/Web-Design/Img/simulation.jpg" alt="Simulación" class="thumbnail">
+          <h3><a href="art-2-simulacion.html">Explorando los Límites de la Realidad</a></h3>
+          <p>En este viaje a través de la ciencia filosófica, nos sumergiremos en la fascinante idea de que nuestra
+            realidad podría ser una simulación.</p>
         </article>
       </section>
 
       <section>
         <article>
-          <img src="/Img/gato.jpg" alt="thumbnail gato" class="thumbnail">
-          <h3><a href="#">¿Tu gato no te quiere? ¡Te enseñamos cómo solucionarlo!</a></h3>
-          <p>En realidad nosotros tampoco sabemos como arreglarlo, pero al menos no estás solo.</p>
+          <img src="/Web-Design/Img/multidimension.jpg" alt="Multidimensiones" class="thumbnail">
+          <h3><a href="#">La Teoría de las Dimensiones</a></h3>
+          <p>En la búsqueda de comprender la complejidad del cosmos, la teoría de las multidimensiones ha surgido como
+            una fascinante exploración.</p>
         </article>
       </section>
 
       <section>
         <article>
-          <img src="/Img/gato.jpg" alt="thumbnail gato" class="thumbnail">
-          <h3><a href="#">Articulo 4</a></h3>
-          <p>Contenido de la segunda sección.</p>
+          <img src="/Web-Design/Img/time.jpg" alt="Tiempo" class="thumbnail">
+          <h3><a href="art-4-tiempo.html">La Paradoja del Tiempo</a></h3>
+          <p>El tiempo, esa dimensión que estructura nuestra existencia, ha desconcertado a filósofos y científicos a lo
+            largo de la historia.</p>
         </article>
       </section>
 
       <section>
         <article>
-          <img src="/Img/gato.jpg" alt="thumbnail gato" class="thumbnail">
-          <h3><a href="#">Articulo 4</a></h3>
-          <p>Contenido de la segunda sección.</p>
+          <img src="/Web-Design/Img/faith.jpg" alt="Dios" class="thumbnail">
+          <h3><a href="art-5-dios.html">La Búsqueda de lo Trascendental</a></h3>
+          <p>La pregunta sobre la existencia y naturaleza de Dios ha sido el foco de la reflexión humana desde tiempos
+            inmemorables.</p>
         </article>
       </section>
 
       <section>
         <article>
-          <img src="/Img/gato.jpg" alt="thumbnail gato" class="thumbnail">
-          <h3><a href="#">Articulo 4</a></h3>
-          <p>Contenido de la segunda sección.</p>
-        </article>
-      </section>
-
-      <section>
-        <article>
-          <img src="/Img/gato.jpg" alt="thumbnail gato" class="thumbnail">
-          <h3><a href="#">Articulo 4</a></h3>
-          <p>Contenido de la segunda sección.</p>
-        </article>
-      </section>
-
-      <section>
-        <article>
-          <img src="/Img/gato.jpg" alt="thumbnail gato" class="thumbnail">
-          <h3><a href="#">Articulo 4</a></h3>
-          <p>Contenido de la segunda sección.</p>
+          <img src="/Web-Design/Img/love.jpg" alt="thumbnail gato" class="thumbnail">
+          <h3><a href="art-6-amor.html">Explorando el Vínculo Universal</a></h3>
+          <p>El amor, esa fuerza que impulsa conexiones y da significado a nuestras vidas, ha sido objeto de exploración
+            poética, filosófica y científica.</p>
         </article>
       </section>
 
     </div>
     <aside>
-      <h3>¿Aún no tienes un gato?</h3>
-      <p>Adquiere el tuyo <a href="#">aquí</a></p>
+      <h3>¿Aún no eres un Gato de Schrödinger?</h3>
+      <p>Conviértete en uno <a href="suscribirse.html">aquí</a></p>
     </aside>
 
   </div>
@@ -122,8 +160,24 @@
       <input type="checkbox" name="Newsletter" id="Newsletter"><br>
       <input type="submit" name="Registro" id="Registro" value="Regístrate"><br>
     </form>
+
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/rosarosales/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/acuarelles/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.behance.net/acuarelles" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+      <a href="https://github.com/ethereallist" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+      <a href="https://wa.me/+584121061511" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+    </div>
+
+    <div class="rights">
+      <small>&copy; Copyright 2024, Gatos de Schrödinger. Todos los derechos reservados.</small>
+    </div>
+
   </footer>
 
+  <a href="#transition">
+    <button class="button-up">⬆</button>
+  </a>
 </body>
 
 </html>
