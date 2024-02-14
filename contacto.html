@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/Img/logo.png">
+  <script src="https://kit.fontawesome.com/797418a870.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -38,23 +39,38 @@
       <h1>Contáctame</h1>
     </header>
 
-    <form class="contact-form" action="" method="post">
-      <label for="Email">Email</label><br>
-      <input type="text" placeholder="Email" name="Email" id="Email" required><br>
-      <label for="Nombre">Nombre:</label><br>
-      <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" required><br>
-      <label for="Asunto">Asunto:</label><br>
-      <input type="text" placeholder="Asunto" name="Asunto" id="Asunto" required><br>
-      <input type="submit" name="Registro" id="Registro" value="Regístrate"><br>
+    <h2 id="suscribirse"><u>Regístrate:</u></h2>
+    <form action="" method="post" class="form-register">
+      <label for="Email" class="email">Email</label>
+      <input type="text" placeholder="Email" name="Email" id="Email" class="email-i" required>
+      <label for="Nombre:" class="nombre">Nombre:</label>
+      <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" class="nombre-i" required>
+      <label for="Newsletter" class="newsletter">¿Te gustaría recibir un boletín semanal?</label>
+      <input type="checkbox" name="Newsletter" id="Newsletter" class="newsletter-i">
+      <input type="submit" name="Registro" id="Registro" value="Regístrate" class="registro-b">
     </form>
 
-    <iframe src="googlemaps" frameborder="0"></iframe>
+    <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0"
+        marginwidth="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Calle%2036%20entre%20av%204%20y%205%20glorias%20patrias+(Astr%C3%B3mera%20Creative%20Studio)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+          href="https://www.gps.ie/">gps devices</a></iframe></div>
+
 
 
   </div>
 
-  <footer class="footer-align">
+  <footer>
 
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/rosarosales/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/acuarelles/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.behance.net/acuarelles" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+      <a href="https://github.com/ethereallist" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+      <a href="https://wa.me/+584121061511" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+    </div>
+    <div class="rights">
+      <small>&copy; <b>Copyright 2024, Gatos de Schrödinger.</b></small>
+    </div>
   </footer>
 
 </body>
