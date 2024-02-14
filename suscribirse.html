@@ -29,23 +29,26 @@
 
   <div class="banner" style="background-image: url(/Web-Design/Img/gato.jpg);">
     <div class="banner-content">
-    <h1>Suscríbete</h1>
-    <button>Sé un Gato de Schrödinger</button>
+      <h1>Suscríbete</h1>
+      <a href="#transition-suscription"><button>Sé un Gato de Schrödinger</button></a>
+      <!-- <button class="enlace" role="link" onclick="window.location='https://www.google.com';">¿Soy un botón o un enlace?</button> -->
     </div>
   </div>
 
-  <div id="transition"></div>
-
-  <h2 id="suscribirse"><u>Regístrate:</u></h2>
-  <form action="" method="post" class="form-register">
-    <label for="Email" class="email">Email</label>
-    <input type="text" placeholder="Email" name="Email" id="Email" class="email-i" required>
-    <label for="Nombre:" class="nombre">Nombre:</label>
-    <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" class="nombre-i" required>
-    <label for="Newsletter" class="newsletter">¿Te gustaría recibir un boletín semanal?</label>
-    <input type="checkbox" name="Newsletter" id="Newsletter" class="newsletter-i">
-    <input type="submit" name="Registro" id="Registro" value="Regístrate" class="registro-b">
-  </form>
+  <div id="transition-suscription" class="style-suscription">
+    <h2 id="suscribirse"><u>Regístrate:</u></h2>
+    <form action="" method="post" class="form-register">
+      <label for="Email" class="email">Email</label>
+      <input type="text" placeholder="Email" name="Email" id="Email" class="email-i" required>
+      <label for="Nombre" class="nombre">Nombre:</label>
+      <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" class="nombre-i" required>
+      <label for="password" class="password">Contraseña:</label>
+      <input type="password" placeholder="password" name="password" id="password" class="password-i" required>
+      <label for="Newsletter" class="newsletter">¿Te gustaría recibir un boletín semanal?</label>
+      <input type="checkbox" name="Newsletter" id="Newsletter" class="newsletter-i">
+      <input type="submit" name="Registro" id="Registro" value="Regístrate" class="registro-b">
+    </form>
+  </div>
 
   <div class="margin">
     <header>
@@ -132,7 +135,7 @@
 
   </footer>
 
-  <a href="#transition">
+  <a href="#transition-suscription">
     <button class="button-up">⬆</button>
   </a>
 

@@ -5,11 +5,10 @@ html {
 body {
     background-image: url(/Img/magicpattern-oPH_5xuMgQw-unsplash.jpg);
     background-size: 100vw 100vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
-    font-family: 'Syne', sans-serif;
+    font-family: 'Syne', sans-serif, Georgia, 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
 }
 
@@ -25,7 +24,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    background-position:top; 
+    background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
@@ -45,7 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgba(255, 255, 255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     width: 70vw;
     text-align: center;
 }
@@ -59,7 +58,7 @@ button {
     font-weight: 700;
     font-family: 'Syne', sans-serif;
     font-size: 1.0rem;
-    
+
 }
 
 button:hover {
@@ -72,8 +71,9 @@ button:hover {
 
 button:active {
     background-color: rgba(19, 27, 20, 0.9);
-    color: wheat; 
-    border: solid 2px rgba(57, 77, 60,0.9);;
+    color: wheat;
+    border: solid 2px rgba(57, 77, 60, 0.9);
+    ;
 }
 
 section {
@@ -116,7 +116,7 @@ nav {
     font-weight: 600;
 }
 
-.home:hover{
+.home:hover {
     text-decoration: underline;
 }
 
@@ -180,7 +180,7 @@ article {
 .article-style {
     width: 70vw;
     margin: 0 auto;
-    margin-top:8vh;
+    margin-top: 8vh;
 }
 
 footer {
@@ -215,9 +215,12 @@ input {
     border-radius: 50px;
     border: none;
     margin-top: 12px;
+    font-family: 'Syne', sans-serif;
 }
 
-#Email, #Nombre, #Asunto {
+#Email,
+#Nombre,
+#Asunto {
     width: 60vw;
     height: 12%;
 }
@@ -256,7 +259,7 @@ input {
     font-weight: 700;
     font-family: 'Syne', sans-serif;
     font-size: 1.0rem;
-    position: fixed; 
+    position: fixed;
     left: 80vw;
     top: 84vh;
 }
@@ -274,7 +277,7 @@ input {
     height: 50px;
 }
 
-.icons i{
+.icons i {
     font-size: 35px;
     margin: 10px;
     color: rgba(255, 255, 255, 0.5);
@@ -302,30 +305,39 @@ input {
 .article-forum {
     width: 70vw;
     margin: 0 auto;
-    
+
 }
 
 .title-forum {
-    margin:15vh 0 1vh 0;
+    margin: 15vh 0 1vh 0;
 }
 
 .form-register {
     display: grid;
     grid-template-columns: 1fr 30px;
-    grid-template-areas: 
-    "email email"
-    "email-i email-i"
-    "nombre nombre"
-    "nombre-i nombre-i"
-    "newsletter newsletter-i"
-    "registro-b registro-b"
+    grid-template-areas:
+        "nombre nombre"
+        "nombre-i nombre-i"
+        "email email"
+        "email-i email-i"
+        "password password"
+        "password-i password-i"
+        "newsletter newsletter-i"
+        "mensaje mensaje"
+        "mensaje-i mensaje-i"
+        "registro-b registro-b"
     ;
     width: 50vw;
 }
 
 
-input[type="checkbox"] {
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #799760;
+}
 
+.newsletter, input[type="checkbox"] {
+   margin: 20px 0 10px 0;
 }
 
 .email {
@@ -343,13 +355,44 @@ input[type="checkbox"] {
 .nombre-i {
     grid-area: nombre-i;
 }
+
 .newsletter {
     grid-area: newsletter;
 }
+
 .newsletter-i {
     grid-area: newsletter-i;
 }
 
 .registro-b {
     grid-area: registro-b;
+}
+
+.mensaje {
+    grid-area: mensaje;
+}
+
+.mensaje-i {
+    grid-area: mensaje-i;
+}
+
+.style-suscription {
+    background-color: #9fbf9e;
+    padding: 30vh 0 30vh 0;
+}
+
+.password {
+    grid-area: password;
+}
+
+.password-i {
+    grid-area: password-i;
+}
+
+textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 12px;
+    font-family: 'Syne', sans-serif;
 }
